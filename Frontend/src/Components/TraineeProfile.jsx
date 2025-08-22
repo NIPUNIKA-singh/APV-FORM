@@ -61,7 +61,7 @@ export default function TraineeProfile() {
     }
 
     try {
-      const res = await fetch("http://localhost:5050/api/traineeProfile", {
+      const res = await fetch("https://apv-form.onrender.com/api/traineeProfile", {
         method: "POST",
         body: submissionData,
       });

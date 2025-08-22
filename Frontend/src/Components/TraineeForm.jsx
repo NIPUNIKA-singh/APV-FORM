@@ -36,7 +36,7 @@ export default function TraineeForm() {
     if (signature) formData.append('signature', signature);
 
     try {
-      const res = await fetch('http://localhost:5050/api/traineeForm', {
+      const res = await fetch('https://apv-form.onrender.com/api/traineeForm', {
         method: 'POST',
         body: formData,
       });

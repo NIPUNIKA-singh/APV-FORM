@@ -40,7 +40,7 @@ const TrainingForm = () => {
     }
 
     try {
-      await axios.post("http://localhost:5050/api/training", data, {
+      await axios.post("https://apv-form.onrender.com/api/training", data, {
         headers: { "Content-Type": "multipart/form-data" },
       });
       toast.success("Form submitted successfully");
